@@ -10,10 +10,17 @@ import TeamList from '../ui/Team-list';
 import TeamStats from '../ui/Team-stats';
 
 class App extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props);
+    this.state = {
+      players: []
+    }
     this.getPlayers = this.getPlayers.bind(this);
     this.renderPlayers = this.renderPlayers.bind(this);
+  }
+  componentWillMount() {
+    const players = this.getPlayers()
+    this.setState({players});
   }
   getPlayers() {
     return [
@@ -52,7 +59,7 @@ class App extends Component {
   };
 
   renderPlayers() {
-    return this.getPlayers().map(player => (<TeamList key={player._id} player={player} />));
+    return this.state.players.map(player => (<TeamList key={player._id} player={player} />));
   }
 
   render() {
@@ -65,7 +72,9 @@ class App extends Component {
             showMenuIconButton={false} />
           <div className="row">
             <div className="col s12 m7"><Player /></div>
-            <div className="col s12 m5"><Divider />
+            <div className="col s12 m5">
+              <h4>Team List</h4>
+              <Divider />
               <List>
                 {this.renderPlayers()}
               </List>
