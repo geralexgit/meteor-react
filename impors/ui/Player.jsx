@@ -25,48 +25,50 @@ const Player = () => (
     </CardMedia>
     <CardTitle title="Card title" subtitle="Card subtitle" />
     <CardText>
-      <Chip backgroundColor={blue200} style={styles.chip}>
-        <Avatar size={32} color={blue200} backgroundColor={blue900}>
-          3
-        </Avatar>
-        Ball manipulation
-      </Chip>
-      <Chip backgroundColor={blue200} style={styles.chip}>
-        <Avatar size={32} color={blue200} backgroundColor={blue900}>
-          3
-        </Avatar>
-        Kicking Abilities
-      </Chip>
-      <Chip backgroundColor={blue200} style={styles.chip}>
-        <Avatar size={32} color={blue200} backgroundColor={blue900}>
-          3
-        </Avatar>
-        Passing Abilities
-      </Chip>
-      <Chip backgroundColor={blue200} style={styles.chip}>
-        <Avatar size={32} color={blue200} backgroundColor={blue900}>
-          3
-        </Avatar>
-        Ball manipulation
-      </Chip>
-      <Chip backgroundColor={blue200} style={styles.chip}>
-        <Avatar size={32} color={blue200} backgroundColor={blue900}>
-          3
-        </Avatar>
-        Ball manipulation
-      </Chip>
-      <Chip backgroundColor={blue200} style={styles.chip}>
-        <Avatar size={32} color={blue200} backgroundColor={blue900}>
-          3
-        </Avatar>
-        Game startegy
-      </Chip>
-      <Chip backgroundColor={blue200} style={styles.chip}>
-        <Avatar size={32} color={blue200} backgroundColor={blue900}>
-          3
-        </Avatar>
-        Risk
-      </Chip>
+      <div style={styles.wrapper}>
+        <Chip backgroundColor={blue200} style={styles.chip}>
+          <Avatar size={32} color={blue200} backgroundColor={blue900}>
+            3
+          </Avatar>
+          Ball manipulation
+        </Chip>
+        <Chip backgroundColor={blue200} style={styles.chip}>
+          <Avatar size={32} color={blue200} backgroundColor={blue900}>
+            3
+          </Avatar>
+          Kicking Abilities
+        </Chip>
+        <Chip backgroundColor={blue200} style={styles.chip}>
+          <Avatar size={32} color={blue200} backgroundColor={blue900}>
+            3
+          </Avatar>
+          Passing Abilities
+        </Chip>
+        <Chip backgroundColor={blue200} style={styles.chip}>
+          <Avatar size={32} color={blue200} backgroundColor={blue900}>
+            3
+          </Avatar>
+          Duel abilities
+        </Chip>
+        <Chip backgroundColor={blue200} style={styles.chip}>
+          <Avatar size={32} color={blue200} backgroundColor={blue900}>
+            3
+          </Avatar>
+          Field speed coverage
+        </Chip>
+        <Chip backgroundColor={blue200} style={styles.chip}>
+          <Avatar size={32} color={blue200} backgroundColor={blue900}>
+            3
+          </Avatar>
+          Blocking abilites
+        </Chip>
+        <Chip backgroundColor={blue200} style={styles.chip}>
+          <Avatar size={32} color={blue200} backgroundColor={blue900}>
+            3
+          </Avatar>
+          Playmaking Risks
+        </Chip>
+      </div>
     </CardText>
     <CardActions></CardActions>
   </Card>
